@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Cronologia</title>
+	<meta charset="utf-8">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<style type="text/css">
+	body{
+        background-image: url('pattern-circles-brown.png');
+		background-repeat: repeat;
+		margin:0px;
+		}
+	nav {
+			border-top: 0px;
+			background-color: #3cb371;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+			
+            
+		}
+		nav form{
+            display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li {
+			margin-right: 10px;
+		}
+		
+		nav ul li a:hover {
+			margin-right: 10px;
+			margin-left: 10px;
+			background-color:#1EA75A;
+			color:black;
+            border-radius: 20%;
+			
+		}
+		
+		nav ul li a {
+            border-radius: 10%;
+			color: #000;
+			text-decoration: none;
+			padding: 5px;
+			transition: 0.3s;
+			font-family: fantasy;
+		}
+/* Menu lateral */
+		nav.menulateral {
+			display: inline-block;
+			color: #fff;
+			background-color:#f3ca4c;
+			justify-content: space-between;
+			padding: 10px;
+			width:12%;
+			border-radius:10px;
+            position:sticky;
+			margin-top: 20px;
+			margin-left: 20px;
+			top: 0;
+			border: #000 solid 2px;
+			height: fit-content;
+			
+		}
+		nav.menulateral li{
+			position: relative;
+		}
+		nav.menulateral ol {
+			display:unset;
+			list-style: none;
+			margin: 10px;
+			padding: 0;
+			width: 200px;
+		}
+
+		nav.menulateral ol li {
+			margin-right: 10px;
+			width: 100%;
+		}
+		
+		nav.menulateral ol li a:hover {
+			margin-right: 10px;
+			margin-left: 10px;
+			color:black;
+            border-radius: 20%;
+			
+		}
+		
+		nav.menulateral ol li a {
+            border-radius: 10%;
+			color: #000;
+			text-decoration: none;
+			padding: 5px;
+			transition: 0.3s;
+			font-family: fantasy;
+		}
+		nav.menulateral ol li ul li a {
+            border-radius: 10%;
+			color: #000;
+			text-decoration: none;
+			padding: 5px;
+			transition: 0.3s;
+			font-family: fantasy;
+		}
+		nav.menulateral ol li ul li a:hover {
+            margin-right: 10px;
+			margin-left: 10px;
+			color:black;
+            border-radius: 20%;
+			background-color:transparent;
+		}
+		nav.menulateral ol li ul {
+           display: unset;
+		}
+		
+	div{
+       
+		margin: auto;
+		width:100%;
+		
+		}
+
+	aside{
+	width:25%;
+	float:left;
+	
+	}
+	
+	aside p{
+	padding-left:15px;
+	padding-right:15px;
+	}
+	aside h3{
+	padding-right:15px;
+	padding-left:15px;
+	color:orange;
+	border-bottom:2px solid orange;
+	
+	
+	}
+	
+	main
+	{
+	float:left;
+	width:100%;
+	
+	}
+	
+	img.crono{
+	width:100%;
+	}
+	
+	footer{
+	clear:left;
+	background-color:black;
+	width:100%;
+	color:white;
+	}
+	
+	
+	hr{
+	margin:10px;
+	}
+	
+    section.cronoimg{
+        margin:10px;
+        border:5px solid #f3ca4c;
+        width: 60%;
+        margin-left: 20%;
+        background-color: #f3ca4c;
+    }
+    section p{
+        width:80%;
+        margin:auto;
+    }
+	section h2{
+        width:80%;
+        margin:auto;
+		margin-bottom: 20px;
+		font-style: italic;
+		text-align: justify;
+		text-decoration: underline solid;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    form{
+        margin-top: 10px;
+    }
+    section.text{
+        background-image: url(pattern-runes-green.png);
+		width:70%;
+		border-radius: 20px;
+        padding: 10px;
+        color: #DCD8D8;
+        margin-top:50px;
+		text-align: justify;
+		margin-bottom:50px;
+		margin-left:auto;
+		margin-right:auto;
+		border: #000 solid 2px;
+		font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+	
+	img.header{
+	width:20%;
+	margin-left: 40%;
+	background-color: #3cb371;
+	border: #000 2px solid;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	padding: 20px;
+	border-radius: 20px;
+	}
+
+	hr{
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:50px;
+	border-color: #1EA75A;
+	}
+	img.link{
+		margin-left:27%;
+		display: unset;
+		border-radius: 200px;
+		margin-top: 50px;
+		width: 20%;
+	}
+	</style>
+</head>
+<body>
+	<div>
+		<header id="init">
+			<img class="header" src="Mi_proyecto-removebg-preview.png">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="crono.html">Cronología</a></li>
+                    <li><a href="mecanicas.html">Objetos</a></li>
+                    <li><a href="detalles.html">Registro</a></li>
+                </ul>
+                <form action="#">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                </form>
+            </nav>
+        </header>
+		
+		<main>
+			<nav class="menulateral">
+				<ol>
+					<li>&bull;<a href="#init">Inicio</a></li>
+					<li>&bull;<a href="#lcreacion">Era de la creación</a></li>
+					
+					<li>
+						&bull;<a href="#ldivision">Era del tiempo</a>
+						
+						<ul>
+							<li>&nbsp;&nbsp;&bull;<a href="#lninio">Linea del niño</a></li>
+							<li>&nbsp;&nbsp;&bull;<a href="#ladul">Linea del adulto</a></li>
+							<li>&nbsp;&nbsp;&bull;<a href="#lderrota">Linea del caido</a></li>
+						</ul>
+				</ol>
+			</nav>
+			<img class="link" src="link.webp">
+			<section class="text">
+				<h2>Cronología</h2>
+                <p> La cronología de The Legend of Zelda es un tema que ha sido objeto de especulación y debate entre los fanáticos durante muchos años. La popular serie de videojuegos, creada por Shigeru Miyamoto y desarrollada por Nintendo, ha capturado la imaginación de los jugadores desde su debut en 1986.
+				<br>
+				A lo largo de las décadas, Nintendo ha lanzado numerosos títulos de Zelda que cuentan historias épicas en el reino de Hyrule y más allá. Sin embargo, no fue hasta el lanzamiento de "The Legend of Zelda: Ocarina of Time" para la consola Nintendo 64 en 1998 que se estableció oficialmente una línea de tiempo dentro del universo de Zelda. 
+				<br><br>
+				A continuación se adjunta una imagen donde se explica brevemente:
+				</p>	
+			</section>
+			
+            <section class="cronoimg">
+				<img class="crono" src="crono.jpg">
+			</section>
+	
+			<hr>
+			<section class="text" id="lcreacion">
+				<h2>Era de la Creación:</h2>
+				<p>
+					En la Era de la Creación de Zelda, los dioses Din, Nayru y Farore crearon el mundo de Hyrule y otorgaron la Trifuerza, un poderoso artefacto, a los seres mortales. El héroe, elegido por la diosa Hylia, se enfrentó al malvado demonio Demise y selló su poder en la Espada Maestra. La diosa Hylia se sacrificó para proteger el reino, renaciendo como la princesa Zelda en diferentes eras. Link, el héroe legendario, emprendió múltiples aventuras para derrotar a enemigos como Ganon y restaurar la paz en Hyrule.	
+				</p>
+				<br>
+				<br>
+				<h2>Era de la Caos:</h2>
+				<p>
+					En la Era del Caos posterior a la Línea de la Creación en Zelda, tras el sellado de Ganon en el Castillo de Hyrule, el reino se sumió en un periodo de desorden y conflicto. Los descendientes de los campeones y los habitantes de Hyrule lucharon por reconstruir y restaurar la paz en el reino. La princesa Zelda continuó investigando los secretos de la Trifuerza y buscó formas de debilitar a Ganon. El héroe Link, después de un largo letargo, despertó para unirse a la lucha contra el renacido mal. Juntos, Zelda y Link reunieron los recursos necesarios para enfrentarse a Ganon y finalmente restauraron la paz y la prosperidad en Hyrule.	
+				</p>
+				
+			</section>
+			<hr>
+			<section class="text" id="ldivision">
+				<h2>Era del Tiempo:</h2>
+				<p>
+					Tras el enfrentamiento contra Ganon en la Era del Tiempo, la línea de tiempo se divide en tres ramas alternativas:
+
+					<br>
+					a. Era del Declive: Ganon regresa y toma el control de Hyrule en el juego "The Legend of Zelda: A Link to the Past".
+					<br>
+					b. Era del Sello: Los eventos de "The Legend of Zelda: Ocarina of Time" llevan al sello de Ganon en el Reino Sagrado y al comienzo de "The Legend of Zelda: The Wind Waker".
+					<br>
+					c. Era del Despertar: Los eventos de "The Legend of Zelda: Link's Awakening" tienen lugar en esta rama de la línea de tiempo.
+				</p>
+			</section>
+			<hr>
+			<section class="text" id="lninio">
+				<h2>Linea del niño:</h2>
+				<p>
+					La línea del niño en The Legend of Zelda sigue la historia de Link después de Ocarina of Time, cuando regresa a su forma de niño. A través de sus aventuras en Ocarina of Time, Majora's Mask y, en el caso del final alternativo, Twilight Princess, Link se enfrenta a numerosos desafíos y lucha contra el mal para proteger Hyrule y encontrar su propio destino como el Héroe del Tiempo.
+				<br>
+				Majora's Mask: Después de los eventos de Ocarina of Time, Link busca a Navi, su hada compañera, pero termina en el reino de Termina. En este juego, Link se encuentra con una máscara misteriosa conocida como Majora's Mask, que tiene el poder de destruir el mundo en tres días. Link debe viajar en el tiempo repetidamente para detener el apocalipsis y desentrañar los misterios detrás de la máscara.
+				<br>
+				Twilight Princess (Final Alternativo): En este final alternativo de la línea del niño, se muestra cómo Link vive su vida en el bosque sin ninguna intervención de los eventos posteriores. El reino de Hyrule se recupera y disfruta de una era de paz, mientras Link vive pacíficamente en el bosque Kokiri.
+				</p>
+			</section>
+			<hr>
+			<section class="text" id="ladul">
+				<h2>Linea del adulto:</h2>
+				<p>
+					
+					Después de la batalla final, la Trifuerza se divide en tres partes y Link regresa a su infancia.
+			<br>
+					The Wind Waker: Situado siglos después de Ocarina of Time, en la Era del Sello, Link es un joven que vive en un mundo inundado. Buscando a su hermana secuestrada, Link se embarca en una aventura en el vasto océano. Descubre su linaje como Héroe del Viento y lucha contra Ganondorf, quien busca la Trifuerza. Al final, Link sella a Ganondorf bajo las olas y el mundo comienza a reconstruirse.
+			<br>
+					Phantom Hourglass: La historia continúa directamente después de The Wind Waker. Link se embarca en una búsqueda para rescatar a Tetra, la líder pirata y amiga de Link. Junto con un hada llamada Ciela y el barco fantasma Linebeck, exploran un reino misterioso en busca de la Esfera Fantasma y para derrotar al malvado Bellum.
+			<br>
+					Spirit Tracks: Situado siglos después de Phantom Hourglass, en la Era del Vapor, Link es un aprendiz de maquinista en un reino que utiliza trenes en lugar de barcos. Link se une a Zelda para restaurar las Vías del Espíritu y derrotar al malvado Demon Train y a su líder, Malladus. La Princesa Zelda ayuda a Link en forma de espíritu.		
+				</p>
+
+			</section>
+			<hr>
+			<section class="text" id="lderrota">
+				<h2>Linea de la derrota:</h2>
+				<p>
+					Se exploran los eventos posteriores a la batalla entre Link y Ganon en el Reino Sagrado. Esta línea de tiempo, conocida como "Derrota de Link", es una de las ramas de la cronología de la serie. A continuación, se presenta una explicación de la trama en esta línea
+					<br>
+					<br>
+					A Link to the Past: Ambientado en la era anterior a Ocarina of Time, Ganon ha obtenido el poder de la Trifuerza y ha sumido a Hyrule en la oscuridad. En este juego, un nuevo héroe llamado Link, guiado por la Princesa Zelda, se embarca en una misión para rescatar a los descendientes de los Sabios y derrotar a Ganon. Link reúne los fragmentos de la Trifuerza y confronta a Ganon en una batalla final para restaurar la paz en Hyrule.
+			<br>
+					En resumen, en la línea de tiempo de la "Derrota de Link", el héroe es derrotado por Ganon en la batalla final en Ocarina of Time, lo que lleva a un futuro oscuro y dominado por Ganon en el Reino de Hyrule. Sin embargo, en juegos posteriores como A Link to the Past, otro héroe emerge para enfrentar a Ganon y restablecer la paz en Hyrule.
+
+				</p>
+			</section>
+			<hr>
+		</main>
+		<footer>
+			César Cruz Álvarez 2023
+		</footer>
+	</div>
+</body>
+</html>

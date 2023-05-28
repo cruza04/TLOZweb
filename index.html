@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TLOZ:Inicio</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<style>
+		
+		nav {
+			background-color: #3cb371;
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px;
+			margin: 0px;
+			border:0px;
+			position: sticky;
+			top:0;
+		}
+
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li {
+			margin-right: 10px;
+		}
+		
+		nav ul li a:hover {
+			margin-right: 10px;
+			margin-left: 10px;
+			background-color:#1EA75A;
+			color:black;
+			border-radius: 20%;
+			
+		}
+		
+		nav ul li a {
+			border-radius: 10%;
+			color: #000;
+			text-decoration: none;
+			padding: 5px;
+			transition: 0.3s;
+			font-family: fantasy;
+		}
+
+
+	header img{
+		
+		margin-left:5%;
+		width: 90%;
+			
+	}
+
+	.banner-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		color: #000;
+		text-align: center;
+	}
+
+	.banner-text h1 {
+		font-size: 3rem;
+		margin-bottom: 0;
+	}
+
+	.banner-text p {
+			font-size: 1.5rem;
+			margin-top: 0;
+		}
+		
+	body {
+		background-image: url('totk-material-1_basecolor.webp');
+		background-repeat: repeat;
+		margin:0px;
+		}
+
+	iframe{
+		border: 2px solid #333;
+		padding: 5px;
+		border-radius: 10px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		transition: 0.5s;
+		margin:0px;
+		width: 60%;
+		height: 625px;
+		
+		}
+
+	iframe:hover {
+			border: 6px solid #333333;
+			background-color: #1C9A53;
+		}
+
+	section.video {
+		display: flex;
+      	justify-content: center;
+      	align-items: center;
+     	height: 80vh;
+	}
+
+	section.text {
+		
+        background-image: url(pattern-runes-green.png);
+        border-radius: 20px;
+        padding: 10px;
+        color: #DCD8D8;
+        margin-top:50px;
+		text-align: justify;
+		font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		width: 40%;
+		margin-bottom:0px;
+		margin-left:auto;
+		margin-right:auto;
+		border:#000 2px solid;
+	}
+		  
+	section p {
+        width:80%;
+        margin:auto;
+    }
+
+	section h2 {
+        width:80%;
+        margin:auto;
+		margin-bottom: 20px;
+		font-style: italic;
+		text-align: justify;
+		text-decoration: underline solid;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+	p.big{
+
+		font-size: 50px;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="title.png">
+		<div class="banner-text">
+			<h1></h1>
+				<p></p>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="crono.html">Cronología</a></li>
+			<li><a href="mecanicas.html">Objetos</a></li>
+            <li><a href="detalles.html">Registro</a></li>
+		</ul>
+		<form action="#">
+			<input type="text" placeholder="Buscar...">
+			<button type="submit">Buscar</button>
+		</form>
+	</nav>
+	<main>
+		<section class="text">
+			
+			<h2>¿Qué es esto?</h2>
+			<p> 
+			Es una serie de videojuegos de acción-aventura creada por los diseñadores japoneses Shigeru Miyamoto y Takashi Tezuka,​ y desarrollada por Nintendo.
+			Su trama por lo general describe las heroicas aventuras del joven guerrero Link, que debe enfrentarse a peligros y resolver acertijos para ayudar a la Princesa Zelda a derrotar a Ganondorf y salvar su hogar, el reino de Hyrule.
+			<br>
+			Aquí os dejamos los trailers de la última entrega de la saga...
+			</p>	
+		</section>
+		
+			<section class="video">
+      
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Pi-MRZBP91I?controls=0&amp;start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </section>
+		<br>
+		<section class="text">
+			<p class="big"> 
+				¡Accede a la página oficial!
+				Pincha <a href="https://www.zelda.com/">aquí</a>
+				
+			</p>
+			<br>
+					
+		</section>
+		<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+	</main>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Objetos</title>
+	<meta charset="utf-8">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<style type="text/css">
+	body{
+        background-image: url('pattern-circles-brown.png');
+		background-repeat: repeat;
+		margin:0px;
+		}
+	nav {
+			border-top: 0px;
+			background-color: #3cb371;
+			color: #fff;
+			
+			justify-content: space-between;
+			padding: 10px;
+			position: sticky;
+            top: 0;
+		}
+		nav form{
+            display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li {
+			margin-right: 10px;
+		}
+		
+		nav ul li a:hover {
+			margin-right: 10px;
+			margin-left: 10px;
+			background-color:#1EA75A;
+			color:black;
+            border-radius: 20%;
+			
+		}
+		
+		nav ul li a {
+            border-radius: 10%;
+			color: #000;
+			text-decoration: none;
+			padding: 5px;
+			transition: 0.3s;
+			font-family: fantasy;
+		}
+
+	div{
+       
+		margin: auto;
+		width:100%;
+		
+		}	
+
+	main
+	{
+	float:left;
+	width:100%;
+	
+	}
+	
+	
+	footer{
+	clear:left;
+	background-color:black;
+	width:100%;
+	color:white;
+	}
+	
+	main section{
+	
+	}
+	
+	hr{
+	margin:10px;
+	}
+	
+    section.cronoimg{
+        margin:10px;
+        border:5px solid #f3ca4c;
+        width: 60%;
+        margin-left: 20%;
+        background-color: #f3ca4c;
+    }
+    section p{
+        width:80%;
+        margin:auto;
+    }
+	section h2{
+        width:80%;
+        margin:auto;
+		margin-bottom: 20px;
+		font-style: italic;
+		text-align: justify;
+		text-decoration: underline solid;
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    img.header{
+	width:20%;
+	margin-left: 40%;
+	background-color: #3cb371;
+	border: #000 2px solid;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	padding: 20px;
+	border-radius: 20px;
+    max-width: 9999999px;
+	}
+    form{
+        margin-top: 10px;
+    }
+    section.text{
+        background-image: url(pattern-runes-green.png);
+		width:70%;
+		border-radius: 20px;
+        padding: 10px;
+        color: #DCD8D8;
+        margin-top:50px;
+		text-align: justify;
+		margin-bottom:50px;
+		margin-left:auto;
+		margin-right:auto;
+		border: #000 solid 2px;
+		font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+	section {
+	}
+	img.header{
+	width:20%;
+	margin-left: 40%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+	padding: 20px;
+	border-radius: 600px;
+    padding: 5px;;
+	}
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: #1EA75A;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 80px;
+      height: auto;
+    }
+    img.link {
+      max-width:9999px;
+      width: 25%;
+      margin-left: 40%;
+    }
+	</style>
+</head>
+<body>
+	<div>
+		<header id="init">
+			<img class="header" src="multi.gif">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="crono.html">Cronología</a></li>
+                    <li><a href="mecanicas.html">Objetos</a></li>
+                    <li><a href="detalles.html">Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+		
+		<main>
+            <section class="text">
+                <h2>Mecánicas y objetos</h2>
+                <p>
+                    En el género de mundo libre es normal que se utilizen diversas mecánicas que nos bloqueen el acceso a diversas áreas y tengamos que desbloquearlas para seguir avaanzando.
+                    Para estas aventuras necesitaremos una serie de objetos o mecanicas que nos permiten el avance en nuestro camino por Hyrule.
+                    <br>
+                    Aquí se muestran los mas comunes...
+                </p>
+            
+            </section>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Localización</th>
+                    <th>Imagen</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Kokiri Sword</td>
+                    <td>La espada básica del juego, otorgada por el Gran Deku Tree.</td>
+                    <td>Bosque Kokiri</td>
+                    <td><img src="imagenes_tabla/Espada.webp" alt="Kokiri Sword"></td>
+                  </tr>
+                  <tr>
+                    <td>Fairy Slingshot</td>
+                    <td>Una honda que lanza semillas para atacar enemigos y activar interruptores.</td>
+                    <td>Bosque Kokiri (tienda)</td>
+                    <td><img src="imagenes_tabla/Tirachinas.webp" alt="Fairy Slingshot"></td>
+                  </tr>
+                  <tr>
+                    <td>Bomb</td>
+                    <td>Explosivos que pueden destruir rocas y abrir caminos ocultos.</td>
+                    <td>Lon Lon Ranch (tienda)</td>
+                    <td><img src="imagenes_tabla/Bomba.webp" alt="Bomb"></td>
+                  </tr>
+                  <tr>
+                    <td>Boomerang</td>
+                    <td>Un arma que puede ser lanzada para atacar enemigos y recolectar objetos a distancia.</td>
+                    <td>Lago Hylia (pequeña isla)</td>
+                    <td><img src="imagenes_tabla/Bumer.webp" alt="Boomerang"></td>
+                  </tr>
+                  <tr>
+                    <td>Hookshot</td>
+                    <td>Un dispositivo que lanza un gancho para alcanzar lugares inaccesibles y desplazarse rápidamente.</td>
+                    <td>Templo del Bosque</td>
+                    <td><img src="imagenes_tabla/Gancho.webp" alt="Hookshot"></td>
+                  </tr>
+                  <tr>
+                    <td>Mirror Shield</td>
+                    <td>Un escudo mágico que refleja los ataques de los enemigos y desactiva rayos de luz dañinos.</td>
+                    <td>Templo del Espíritu</td>
+                    <td><img src="imagenes_tabla/Escudo.webp" alt="Mirror Shield"></td>
+                  </tr>
+                  <tr>
+                    <td>Ocarina of Time</td>
+                    <td>Un instrumento musical mágico que permite a Link aprender canciones y viajar en el tiempo.</td>
+                    <td>Bosque Kokiri</td>
+                    <td><img src="imagenes_tabla/Ocarina.webp" alt="Ocarina of Time"></td>
+                  </tr>
+                </tbody>
+              </table>
+            <img class="link" src="link-crouching.webp">
+        </main>
+		<footer>
+			César Cruz Álvarez 2023
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú desplegable</title>
+  <style>
+    /* Estilos para el menú */
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul.menu li {
+      display: inline-block;
+      position: relative;
+    }
+
+    ul.menu li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    ul.menu ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f9f9f9;
+      padding: 0;
+    }
+
+    ul.menu li:hover ul {
+      display: block;
+    }
+
+    ul.menu ul li {
+      width: 200px;
+    }
+
+    ul.menu ul li a {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Menú desplegable</h1>
+  <ul class="menu">
+    <li>
+      <a href="#">Inicio</a>
+    </li>
+    <li>
+      <a href="#">Productos</a>
+      <ul>
+        <li><a href="#">Producto 1</a></li>
+        <li><a href="#">Producto 2</a></li>
+        <li><a href="#">Producto 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Servicios</a>
+      <ul>
+        <li><a href="#">Servicio 1</a></li>
+        <li><a href="#">Servicio 2</a></li>
+        <li><a href="#">Servicio 3</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Contacto</a>
+    </li>
+  </ul>
+</body>
+</html>

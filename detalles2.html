@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cuenta atrás</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-bottom: 10px;
+    }
+
+    select {
+      height: 30px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    #countdown {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+	nav {
+			border-top: 0px;
+			background-color: #3cb371;
+			color: #fff;
+			
+			justify-content: space-between;
+			padding: 10px;
+			position: sticky;
+            top: 0;
+		}
+		nav form{
+            display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav ul {
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		nav ul li {
+			margin-right: 10px;
+		}
+		
+		nav ul li a:hover {
+			margin-right: 10px;
+			margin-left: 10px;
+			background-color:#1EA75A;
+			color:black;
+            border-radius: 20%;
+			
+		}
+		
+		nav ul li a {
+            border-radius: 10%;
+			color: #000;
+			text-decoration: none;
+			padding: 5px;
+			transition: 0.3s;
+			font-family: fantasy;
+		}
+
+		img.header{
+		width:10%;
+		margin-left: 40%;
+		background-color: #3cb371;
+		border: #000 2px solid;
+		margin-bottom: 0%;
+		margin-top: 0%;
+		padding: 20px;
+		border-radius: 20px;
+	}
+  input.cuenta {
+      font-size: 24px;
+      text-align: center;
+      width: 200px;
+      height: 50px;
+    }
+	
+  </style>
+</head>
+<body>
+    <nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="crono.html">Cronología</a></li>
+			<li><a href="mecanicas.html">Objetos</a></li>
+			<li><a href="detalles.html">Registro</a></li>
+		</ul>  <input type="text" id="countdown" value="" readonly>
+    </nav>
+  <script>
+    var countdownElement = document.getElementById("countdown");
+    var tiempoInicial = 120; // Tiempo inicial en segundos
+
+    function countdown() {
+      var minutos = Math.floor(tiempoInicial / 60);
+      var segundos = tiempoInicial % 60;
+
+      var minutosFormateados = minutos < 10 ? "0" + minutos : minutos;
+      var segundosFormateados = segundos < 10 ? "0" + segundos : segundos;
+
+      countdownElement.value = minutosFormateados + ":" + segundosFormateados;
+
+      if (tiempoInicial <= 0) {
+        countdownElement.value = "00:00";
+        setTimeout(function() {
+          window.close(); // Cierra la página cuando la cuenta llega a cero
+        }, 1000); // Espera 1 segundo antes de cerrar la página
+      } else {
+        tiempoInicial--;
+        setTimeout(countdown, 1000); // Actualizar cada segundo (1000 ms)
+      }
+    }
+    alert("Tienes 2 minutos pata completar el registro antes de que se cierre la página");
+    countdown();
+  </script>
+  <div class="container">
+    <h1>Registro</h1>
+    <a href="spamdance.gif">
+	    <img class="header" src="sword.webp">
+    </a>
+  <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option value="masculino">Masculino</option>
+      <option value="femenino">Femenino</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <label for="pais">País:</label>
+    <select id="pais" name="pais">
+      <option value="es">España</option>
+      <option value="mx">México</option>
+      <option value="ar">Argentina</option>
+    </select>
+
+    <input type="submit" value="Registrarse">
+  </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nombre del Juego</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Nombre del Juego</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Descripción</h2>
+      <p>DESCGAME.</p>
+    </section>
+    <section>
+      <h2>Características</h2>
+      <ul>
+        <li>Carac</li>
+        <li>Carac</li>
+        <li>Carac</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Trailer</h2>
+      <video controls>
+        <source src="trailer.mp4" type="video/mp4">
+      </video>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
